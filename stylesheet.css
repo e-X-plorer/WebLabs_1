@@ -1,12 +1,12 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    color: lightgrey;
+    color: #d3d3d3;
     background: #212121;
     font-size: 14px;
 }
 
 footer {
-    color: grey;
+    color: #808080;
     position: absolute;
     bottom: 0px;
     padding: 10px;
@@ -50,7 +50,7 @@ h3 {
 
 .blue-rect {
     border-radius: 10px;
-    background-color: midnightblue;
+    background-color: #191970;
     padding-left: 10px;
     padding-top: 1px;
     padding-bottom: 1px;
