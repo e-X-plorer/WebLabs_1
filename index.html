@@ -5,6 +5,7 @@
     <meta name="keywords" content="software, developer, engineer, c#, csharp, dotnet, programmer">
     <meta name="description" content="Web page for web development lab 1">
     <link rel="stylesheet" href="stylesheet.css">
+    <title>Arseny Polezhaev</title>
     <!--<link rel="stylesheet" href="outlines.css">-->
 </head>
 <body>
@@ -99,6 +100,27 @@
                 <span class="indented">Started working on N+1 query problem analyzer for ReSharper.</span>
             </li>
         </ul>
+        <section style="position: absolute; bottom: 10px">
+            <h3>Piece of code (nothing interesting here):</h3>
+            <code>
+                <pre>
+private async Task&lt;Solution&gt; MakePartialAsync(Document document, ClassDeclarationSyntax classDeclaration,
+    CancellationToken cancellationToken)
+{
+    var oldNode = classDeclaration;
+
+    var indexIfLong = oldNode.IndexOfChildContainingNthOccurrence('\n', Settings.Default.MaxLinesCount + 1);
+    var rangeStart = Math.Min(indexIfLong == -1 ? int.MaxValue : indexIfLong,
+    Settings.Default.MaxMemberCount);
+
+    var nodesToSeparate = oldNode.Members.ToList();
+    nodesToSeparate = nodesToSeparate.GetRange(rangeStart, nodesToSeparate.Count - rangeStart);
+
+    return await MoveMembersToNewFile(nodesToSeparate, document, document.Name, oldNode, cancellationToken);
+}
+                </pre>
+            </code>
+        </section>
     </main>
     <footer>
         <span>last edit: <time datetime="2020-09-17 12:00">September 17, 2020</time></span>
