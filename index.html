@@ -10,41 +10,68 @@
 <body>
     <header>
         <h1>Полежаев Арсений</h1>
-        <h2>M33011</h2>
+        <h3>M33011</h3>
     </header>
     <main class="row">
         <div id="right">
-            <div id="contacts" class="left-list-item">
-                <h2>Contacts:</h2>
+            <section class="blue-rect right-list-item">
+                <h3>Contacts:</h3>
                 <ul class="img-text-list">
                     <li style="padding: 5px">
-                        <img src="location.png" style="width: 20px; length: 20px;">
-                        <p style="display: inline; margin-left: 5px">Saint Petersburg, Russian Federation</p>
+                        <img src="location.png" class="img-20px">
+                        <span class="text-after-img">Saint Petersburg, Russian Federation</span>
                     </li>
                     <li style="padding: 5px">
-                        <img src="mail.png" style="width: 20px; length: 20px">
-                        <p style="display: inline; margin-left: 5px">arseny.polezhaev@gmail.com</p>
+                        <img src="mail.png" class="img-20px">
+                        <span class="text-after-img">arseny.polezhaev@gmail.com</span>
                     </li>
-                    <li style="padding: 5px;">
-                        <img src="Git.png" style="width: 20px; length: 20px">
-                        <p style="display: inline; margin-left: 5px">github.com/e-X-plorer</p>
+                    <li style="padding: 5px">
+                        <img src="Git.png" class="img-20px">
+                        <span class="text-after-img">github.com/e-X-plorer</span>
                     </li>
                 </ul>
-            </div>
-            <div class="left-list-item">
-                <h2>Programming languages & technologies</h2>
-                <ul>
-                    <li>C#</li>
-                    <li>C++</li>
+            </section>
+            <section class="blue-rect right-list-item">
+                <h3>Programming languages:</h3>
+                <ul class="skills-list">
+                    <li class="skill-list-item">C#</li>
+                    <li class="skill-list-item">C++</li>
+                    <li class="skill-list-item">Java</li>
                 </ul>
-            </div>
+            </section>
+            <section class="blue-rect right-list-item">
+                <h3>Primary skills and technologies:</h3>
+                <ul class="skills-list">
+                    <li class="skill-list-item">.NET / .NET Core</li>
+                    <li class="skill-list-item">Static code analysis</li>
+                    <li class="skill-list-item">Unity engine</li>
+                </ul>
+            </section>
+            <section class="blue-rect right-list-item">
+                <img src="globe.png" style="margin-top: 15px; width: 15px">
+                <h3 class="text-after-img" style="vertical-align: baseline">Languages:</h3>
+                <ul class="skills-list">
+                    <li class="skill-list-item">English</li>
+                    <li class="skill-list-item">Russian</li>
+                </ul>
+            </section>
         </div>
         <ul id="left">
-            <li class="employment-list-element">JetBrains</li>
-            <li class="employment-list-element">JetBrains</li>
+            <li class="employment-list-element" style="border: 1px limegreen solid">
+                <img src="jetbrains.png" class="img-company">
+                <h2>JetBrains</h2>
+                <h3>Software developer (ReSharper team)<pre style="display: inline">  |  </pre>
+                    <span class="employment-date"><time datetime="2020-09-01 00:00">September 2020</time> - ongoing</span>
+                </h3>
+                <span class="indented">Working on static code analysis, specifically, analysis of N+1 query problem for
+                    EntityFrameworkCore and other problems.</span>
+            </li>
+            <li class="employment-list-element">
+
+            </li>
         </ul>
     </main>
     <footer>
-        <p>last edit: <time datetime="2020-09-09 00:00">September 9, 2020</time></p>
+        <span>last edit: <time datetime="2020-09-09 00:00">September 9, 2020</time></span>
     </footer>
 </body>

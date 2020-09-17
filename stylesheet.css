@@ -20,6 +20,12 @@ h1 {
 
 h2 {
     font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -42,33 +48,73 @@ h2 {
     margin: 0px;
 }
 
-#contacts {
+.blue-rect {
     border-radius: 10px;
     background-color: midnightblue;
     padding-left: 10px;
     padding-top: 1px;
+    padding-bottom: 1px;
 }
 
-.left-list-item {
-    margin: 10px;
+.right-list-item {
+    margin: 10px 10px 20px;
 }
 
 .img-text-list {
     list-style: none;
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
 }
 
-.employment-column {
-    float: left;
-    list-style: none;
+.skills-list {
+    list-style: square;
     padding: 0px;
-    overflow: hidden;
+    margin: 0px;
 }
 
-.employment-list-element{
+.skill-list-item {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.skill-list-item-level {
+    display: inline;
+    text-align: right;
+}
+
+.img-20px {
+    width: 20px;
+    height: 20px;
+}
+
+.img-company {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.text-after-img {
+    display: inline;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.employment-list-element {
     display: block;
+    background: #373737;
     margin: 20px;
-    padding: 10px;
-    background-color: #373737;
+    padding: 10px 10px 20px 10px;
+}
+
+.employment-date {
+    color: white;
+    font-family: Consolas, sans-serif;
+}
+
+.indented {
+    text-indent: 50px;
 }
