@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     color: #d3d3d3;
     background: #212121;
     font-size: 14px;
@@ -8,9 +8,9 @@ body {
 footer {
     color: #808080;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     padding: 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 h1 {
@@ -25,6 +25,7 @@ h2 {
 }
 
 h3 {
+    padding: 0;
     font-size: 18px;
     font-weight: normal;
 }
@@ -32,28 +33,29 @@ h3 {
 #right {
     position: absolute;
     width: 25%;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: #1c1e4a;
     padding: 10px;
 }
 
 #left {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 73%;
-    left: 0px;
+    left: 0;
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .blue-rect {
-    border-radius: 10px;
     background-color: #191970;
     padding-left: 10px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .right-list-item {
@@ -62,31 +64,29 @@ h3 {
 
 .img-text-list {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .skills-list {
-    list-style: square;
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: square inside;
+    padding: 0;
+    margin: 0;
 }
 
 .skill-list-item {
-    margin: 10px;
+    margin: 5px;
     font-size: 14px;
     font-weight: bold;
-    width: 100%;
-}
-
-.skill-list-item-level {
-    display: inline;
-    text-align: right;
 }
 
 .img-20px {
+    display: inline;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
 }
 
 .img-company {
@@ -99,7 +99,7 @@ h3 {
 
 .text-after-img {
     display: inline;
-    vertical-align: top;
+    vertical-align: middle;
     margin-left: 5px;
 }
 
@@ -111,11 +111,22 @@ h3 {
     position: relative;
 }
 
+.float-globe {
+    float: right;
+    float-wrap: wrap;
+}
+
+.float-globes:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .employment-date {
     color: white;
     font-family: Consolas, sans-serif;
 }
 
 .indented {
-    text-indent: 0px;
+    text-indent: 10px
 }
